@@ -220,7 +220,7 @@ function home() {
   const userSql = 'select count(*) as count from user'
   const bookSql = 'select count(*) as count from book'
   const shelfSql = 'select count(*) as count from shelf'
-  const rankSql = 'select count(*) as count from rank'
+  const rankSql = 'select count(*) as count from `rank`'
   return Promise.all([
     db.querySql(userSql),
     db.querySql(bookSql),

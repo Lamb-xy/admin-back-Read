@@ -27,7 +27,7 @@ const privateKey = fs.readFileSync('https/xiaoyangmm.top.key', 'utf8')
 const certificate = fs.readFileSync('https/xiaoyangmm.top.pem', 'utf8')
 const credentials = { key: privateKey, cert: certificate }
 const httpsServer = https.createServer(credentials, app)
-const SSLPORT = 18082
+const SSLPORT = 5000
 httpsServer.listen(SSLPORT, function() {
   console.log('HTTPS Server is running on: https://localhost:%s', SSLPORT)
 })
